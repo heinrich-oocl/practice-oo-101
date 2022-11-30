@@ -2,14 +2,14 @@ package com.oo101;
 
 public class Vehicle {
     private String name;
-    private int speed;
+    private Engine engine;
 
-    public Vehicle(String name, int speed){
+    public Vehicle(String name, Engine engine){
         this.name = name;
-        this.speed = speed;
+        this.engine = engine;
     }
 
     public void speedup(){
-        System.out.println(name + ": speed up " + speed + " km/h");
+        System.out.println(name + ": speed up " + engine.getSpeed() + " km/h");
     }
 }
