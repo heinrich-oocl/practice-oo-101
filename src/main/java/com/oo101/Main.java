@@ -6,5 +6,10 @@ public class Main {
         Truck truck = new Truck("Big Truck", 10);
         car.speedup();
         truck.speedup();
+
+        Driver carDriver = new Driver(car);
+        Driver truckDriver = new Driver(truck);
+        carDriver.drive();
+        truckDriver.drive();
     }
 }
